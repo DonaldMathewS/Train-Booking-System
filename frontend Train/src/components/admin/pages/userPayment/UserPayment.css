@@ -1,0 +1,78 @@
+.user-payment-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.payments-table {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.back-to-home {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-to-home a {
+  text-decoration: none;
+}
+
+.back-to-home p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-to-home p:hover {
+  background-color: #007bff;
+  color: white;
+}

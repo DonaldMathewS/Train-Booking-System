@@ -1,0 +1,90 @@
+.contact-container {
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-family: "Georgia", serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

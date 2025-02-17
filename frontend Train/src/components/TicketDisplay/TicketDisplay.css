@@ -1,0 +1,135 @@
+.TrainItem {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "tn dt at ep sa";
+  gap: 0; /* Remove gaps between sections */
+  background-color: #fff; /* Background color for clarity */
+  border-collapse: collapse; /* Make borders collapse like a table */
+  padding: 0;
+  margin: 15px;
+  border: 2px solid #ddd; /* Outer border like a table */
+}
+
+.TrainItem:hover {
+  transform: none; /* Remove hover scaling */
+}
+
+.TrainItem div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid #ddd; /* Border between columns */
+  border-top: 1px solid #ddd; /* Border between rows */
+}
+
+.TrainItem div:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+}
+
+.ticketName {
+  grid-area: tn;
+  border-right: 1px solid #ddd; /* Border between columns */
+}
+
+.ticketName h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.ticketName h4 {
+  color: #b6adad;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.depatureTimePlace {
+  grid-area: dt;
+}
+
+.depatureTimePlace h3 {
+  color: tomato;
+  font-size: 20px;
+}
+
+.depatureTimePlace p {
+  color: rgb(12, 12, 12);
+  font-size: 16px;
+}
+
+.arrivaltime {
+  grid-area: at;
+}
+
+.arrivaltime h3 {
+  color: tomato;
+  font-size: 20px;
+}
+
+.arrivaltime span {
+  color: black;
+  font-size: 16px;
+}
+
+.arrivaltime p {
+  color: black;
+  font-size: 16px;
+}
+
+.farePrice {
+  grid-area: ep;
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.seatsAvailable {
+  grid-area: sa;
+}
+
+.seatsAvailable p {
+  color: steelblue;
+  font-size: 16px;
+}
+
+.seatsAvailable .booked {
+  color: tomato;
+  font-size: 16px;
+}
+
+.seatsAvailable button {
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.seatsAvailable button:hover {
+  background-color: #218838;
+}
+
+/* Fade-in effect for train item */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.TrainItem {
+  animation: fadeIn 0.5s ease-in-out;
+}

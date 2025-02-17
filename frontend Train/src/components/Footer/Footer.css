@@ -1,0 +1,93 @@
+.footer {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/train.jpg") no-repeat center center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.footerContentLeft,
+.footerContentCenter,
+.footerContentRight {
+  flex: 1;
+  margin: 10px;
+}
+
+.footerContentLeft img {
+  max-width: 150px;
+  margin-bottom: 10px;
+  border-radius: 95px;
+}
+
+.footerContentLeft p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footerSocialIcons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSocialIcons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footerSocialIcons img:hover {
+  transform: scale(1.1);
+}
+
+.footerContentCenter h2,
+.footerContentRight h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f4f4f4;
+}
+
+.footerContentCenter ul,
+.footerContentRight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerContentCenter ul li,
+.footerContentRight ul li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footerContentCenter ul li:hover,
+.footerContentRight ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer hr {
+  border: 0.5px solid #818178;
+  margin: 20px 0;
+}
+
+.footerCopyright {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}

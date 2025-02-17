@@ -1,0 +1,182 @@
+.trainTicket h2 {
+  padding: 10px;
+}
+
+.trainItemHeader {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #000000;
+  padding: 10px;
+
+  border: 1px solid #ddd;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fffefe;
+  gap: 5px;
+  margin: px;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.trainItemHeader div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.sc {
+  margin-left: auto;
+  margin-top: 5px; /* Aligns the element to the right */
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  flex-direction: row;
+  gap: 30px;
+  background: #f7f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.inputBox {
+  position: relative;
+  width: 200px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background: #fcfcfc;
+  outline: none;
+  color: #000000; /* Improved readability */
+  font-size: 1rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow intensity */
+}
+
+.inputBox span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.5em;
+  color: rgba(5, 5, 5, 0.674);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.inputBox input:valid + span,
+.inputBox input:focus + span {
+  color: rgb(11, 11, 11);
+  transform: translateX(10px) translateY(-22px);
+  font-size: 0.55em;
+  background: rgb(250, 249, 249);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #070707; /* Brighter focus color */
+}
+
+.departure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.departure button {
+  padding: 10px;
+  background: rgb(245, 242, 243);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.departure button:hover {
+  background: #dcd3d3;
+}
+
+.departure button img {
+  width: 16px;
+  height: 16px;
+}
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Dropdown Styling */
+.filter-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.filter-container select:hover {
+  border-color: #0056b3;
+}
+
+/* Focus Effect */
+.filter-container select:focus {
+  background-color: #e9ecef;
+  border-color: #0056b3;
+}
+
+/* Dropdown Arrow Styling */
+.filter-container select {
+  appearance: none; /* Removes default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23007bff' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-container select {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .inputBox {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

@@ -1,0 +1,148 @@
+.addTrainTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addTrainTitle h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+  padding: 0;
+}
+
+.addTrainTitle p {
+  font-size: 16px;
+  color: #050505;
+  margin-top: 5px;
+}
+
+.add-train-form {
+  max-width: 450px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #c4c7ca;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(87, 207, 220, 0.91);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  margin-right: 5px;
+}
+
+.form-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f5f7fa;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+.back-to-home {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-to-home .form-button {
+  background-color: #6c757d;
+  margin: 0 auto;
+}
+
+.back-to-home .form-button:hover {
+  background-color: #5a6268;
+}
+
+.back-to-home {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-to-home a {
+  text-decoration: none;
+}
+
+.back-to-home p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-to-home p:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .add-train-form {
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  .addTrainTitle h1 {
+    font-size: 24px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-input,
+  .form-select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .form-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

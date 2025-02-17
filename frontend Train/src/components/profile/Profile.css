@@ -1,0 +1,194 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Profile Container */
+.profile {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  margin: 50px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.P-sidebar {
+  background: #1af0a5;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 400px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(0, 0, 0, 0.1); /* adjusted opacity for a softer shadow */
+}
+
+.P-sidebar div {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.P-sidebar div:hover {
+  background-color: #16d492; /* Added hover effect */
+}
+
+.P-sidebar .profile-btn {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Mainbar Styling */
+.P-mainbar {
+  background: linear-gradient(rgba(14, 14, 14, 0.4), rgba(9, 9, 9, 0.5)),
+    url("/bg.jpg") center no-repeat;
+
+  background-size: cover;
+  padding: 40px;
+  display: grid;
+  background-color: #ffffff;
+  grid-template-rows: auto 1fr;
+  gap: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.title-p {
+  margin-bottom: 5px;
+}
+
+.title-p h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #dacfcf;
+}
+
+.title-p p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+/* Form Styling */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: rgb(213, 208, 208);
+}
+
+form input[type="text"],
+form input[type="date"],
+form button {
+  padding: 10px;
+  font-size: 0.8rem;
+  border: none; /* Remove all borders */
+  border-bottom: 2px solid #bdc3c7; /* Add bottom border */
+  border-radius: 0; /* Remove the rounded corners */
+  width: 100%;
+  background: #fff;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus {
+  border-color: #acf6d6;
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  background: #1af0a5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #16d492;
+}
+
+/* Radio Buttons Styling */
+form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #090909;
+  text-shadow: 1px 1px 1px #5d6e66;
+}
+
+form input[type="radio"] {
+  margin: 0;
+  background-color: #e8edeb;
+}
+
+/* Error Message Styling */
+.error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+}
+
+.Home-b {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #1af0a5;
+  color: white;
+  text-align: start;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Home-b:hover {
+  background-color: #16d492;
+}
+
+.Home-b a {
+  color: inherit;
+  text-decoration: none;
+}
+.profile-b p span {
+  color: black;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+form p select {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .P-sidebar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .P-mainbar {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+}

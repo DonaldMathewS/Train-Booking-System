@@ -1,0 +1,59 @@
+.booked-ticket-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.bookings-section,
+.payments-section {
+  margin-bottom: 30px;
+}
+
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.table th {
+  background-color: #4efbbe;
+  color: #333;
+}
+
+.table td {
+  background-color: #fafafa;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-data {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+}
+
+.booked-table {
+  margin-bottom: 40px;
+}
+
+.payment-table {
+  margin-top: 20px;
+}
+
+strong {
+  color: #555;
+}

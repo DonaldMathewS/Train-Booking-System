@@ -1,0 +1,173 @@
+/* Container for the entire homepage */
+.homepage-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Light background color */
+  min-height: 100vh; /* Ensure full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Footer stays at the bottom */
+}
+
+/* Header styling */
+.homepage-header {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.homepage-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Main content styling */
+.homepage-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Message container inside the main */
+.homepage-message-container {
+  margin-bottom: 30px;
+}
+
+/* Styling for Admin greeting */
+.Admin {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* General message under Admin greeting */
+.homepage-message {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Button container */
+.homepage-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Links container */
+.homepage-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual Button Styling */
+.homepage-link button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.homepage-link button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styling */
+.homepage-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/* Container for buttons */
+.homepage-button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Button links container */
+.homepage-links {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Spacing between buttons */
+  width: 80%; /* Adjust width */
+  max-width: 800px; /* Limit maximum width */
+}
+
+/* Button styling */
+.homepage-link button {
+  width: 100%; /* Make buttons fill their container */
+  padding: 14px 20px; /* Adjust padding for better sizing */
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover effect */
+.homepage-link button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .homepage-links {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .homepage-link button {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .homepage-title {
+    font-size: 2rem;
+  }
+
+  .Admin {
+    font-size: 1.2rem;
+  }
+
+  .homepage-message {
+    font-size: 1rem;
+  }
+
+  .homepage-button-container {
+    gap: 10px;
+  }
+
+  .homepage-link button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,129 @@
+.station-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.main-heading {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Box */
+.form-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+/* Form Styles */
+.station-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-field,
+.select-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus,
+.select-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.station-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.station-table th,
+.station-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.station-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.station-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.station-table tr:hover {
+  background-color: #ddd;
+}
+/* Back to Home Link */
+.back-to-home {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-to-home a {
+  text-decoration: none;
+}
+
+.back-to-home p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-to-home p:hover {
+  background-color: #007bff;
+  color: white;
+}

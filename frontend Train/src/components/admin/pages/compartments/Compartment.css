@@ -1,0 +1,146 @@
+/* Scope all styles under .compartment-container */
+
+.compartment-container {
+  padding: 20px;
+  background-color: #cbcdce;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Title and Subtitle */
+.compartment-container .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.compartment-container .subtitle {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #444;
+}
+
+/* Form Styles */
+.compartment-container .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.compartment-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.compartment-container .form-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.compartment-container .form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.compartment-container .form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.compartment-container .form-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.compartment-container .form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.compartment-container .compartment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.compartment-container .compartment-table th,
+.compartment-container .compartment-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.compartment-container .compartment-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.compartment-container .compartment-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.compartment-container .compartment-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Button Styles */
+.compartment-container .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.compartment-container .delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Back to Home Link */
+.back-to-home {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-to-home a {
+  text-decoration: none;
+}
+
+.back-to-home p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-to-home p:hover {
+  background-color: #007bff;
+  color: white;
+}

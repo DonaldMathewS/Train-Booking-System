@@ -1,0 +1,61 @@
+.AdminNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1e293b;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.alogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.navIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navIcons p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navIcons p:hover {
+  color: #38bdf8;
+}
+
+.adminprofile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.adminprofile:hover {
+  transform: scale(1.1);
+}
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
